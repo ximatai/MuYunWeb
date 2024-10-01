@@ -1,0 +1,10 @@
+//修改Element 特定组件的全局样式，需要时启用
+//@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//  $colors: (
+//    'primary': (
+//      'base': #722bda,
+//    ),
+//  ),
+//
+//);
+@use "element-plus/theme-chalk/src/index.scss" as *;
