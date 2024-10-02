@@ -57,8 +57,8 @@ export default defineConfig({
             axios: 'axios',  // 将 axios 注入为全局的 `axios`
         }),
         visualizer({
-            filename: './dist/stats.html', // 输出分析文件
-            open: true,                    // 打包完成后自动打开分析页面
+            filename: './rollup/stats.html', // 输出分析文件
+            open: false,  // 打包完成后自动打开分析页面
         }),
     ],
 })
