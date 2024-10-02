@@ -15,7 +15,6 @@ import {useExposed} from "@/components/hooks/useExposed.js";
 defineOptions({
   //组件名称
   name: 'InputNumber',
-  att: ''
 })
 /**
  * 透传Element的属性到组件上
