@@ -15,7 +15,7 @@
 <script setup>
 import {onMounted, nextTick} from "vue"
 import appStore from "@/store/index.js";
-
+console.log(import.meta.env.VITE_APP_ROOT)
 onMounted(() => {
   appStore.useUserStore.setUser({
     id: '123',
