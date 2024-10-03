@@ -1,14 +1,14 @@
 <template xmlns="http://www.w3.org/1999/html">
-  <div class="p-40 mt-10">
-    <el-button type="primary" @click="changeUser">测试Store setUser</el-button>
-    {{ appStore.useUserStore.user.name }}
-
-    自己的组件库
-    <MInputNumber ref="mInputNumber" v-model="v" @change="change1">
-    </MInputNumber>
-    Element 组件库
-    <el-input ref="elInputOne" v-model="v" placeholder="Please input number"
-              @change="change1"></el-input>
+  <div id="muyun-app">
+    <router-view/>
+<!--    <el-button type="primary" @click="changeUser">测试Store setUser</el-button>-->
+<!--    {{ appStore.useUserStore.user.name }}-->
+<!--    自己的组件库-->
+<!--    <MInputNumber ref="mInputNumber" v-model="v" @change="change1">-->
+<!--    </MInputNumber>-->
+<!--    Element 组件库-->
+<!--    <el-input ref="elInputOne" v-model="v" placeholder="Please input number"-->
+<!--              @change="change1"></el-input>-->
   </div>
 </template>
 

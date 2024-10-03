@@ -6,7 +6,7 @@
   </el-input>
 </template>
 <script setup>
-import {defineEmits, defineOptions, ref} from "vue";
+import {ref} from "vue";
 import {isNumber} from "../../utils/validate.js";
 import {useExposed} from "@/components/hooks/useExposed.js";
 /**

@@ -7,10 +7,16 @@ import {computed, ref} from "vue";
 export const useGlobal = defineStore('global', () => {
     const token = ref(null)
     const getToken = computed(() => user.value)
+
     function setToken(u) {
         token.value = u
     }
+
     return {getToken, setToken, token}
 }, {
-    persist: true,
+    persist: {
+        key: 'token',
+        paths: ['token'],
+        storage: localStorage,
+    },
 },)
