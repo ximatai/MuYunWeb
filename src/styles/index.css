@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   font-size: 12px;
   --el-font-size-base: 12px;
 }
-#muyun-app{
+#muyun-app {
   width: 100%;
   height: 100%;
 }

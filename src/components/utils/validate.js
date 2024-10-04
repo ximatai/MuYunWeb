@@ -4,6 +4,6 @@
  * @returns {boolean}
  */
 export const isNumber = (value) => {
-    const regex = /^[+-]?(\d+(\.\d*)?|\.\d+)$/;
-    return regex.test(value);
-};
+  const regex = /^[+-]?(\d+(\.\d*)?|\.\d+)$/
+  return regex.test(value)
+}

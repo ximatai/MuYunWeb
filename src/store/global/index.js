@@ -1,22 +1,26 @@
 /**
  * 全局属性以及系统配置相关的store
  */
-import {defineStore} from 'pinia'
-import {computed, ref} from "vue";
+import { defineStore } from 'pinia'
+import { computed, ref } from 'vue'
 
-export const useGlobal = defineStore('global', () => {
+export const useGlobal = defineStore(
+  'global',
+  () => {
     const token = ref(null)
     const getToken = computed(() => user.value)
 
     function setToken(u) {
-        token.value = u
+      token.value = u
     }
 
-    return {getToken, setToken, token}
-}, {
+    return { getToken, setToken, token }
+  },
+  {
     persist: {
-        key: 'token',
-        paths: ['token'],
-        storage: localStorage,
+      key: 'token',
+      paths: ['token'],
+      storage: localStorage,
     },
-},)
+  },
+)
